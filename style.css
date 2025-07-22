@@ -1,0 +1,431 @@
+/* CSS Variables for Light Mode (Default) - Based on Original Design */
+:root {
+    --bg-primary: #f0f2f5; /* Original light gray background */
+    --text-primary: #333; /* Original body text */
+    --text-content-light: #666; /* Adjusted for readability in original context */
+    --text-content-medium: #333; /* Adjusted for readability in original context */
+    --text-heading-light: #1d4ed8; /* Original blue-700 equivalent */
+    --text-heading-dark: #0d47a1; /* Original blue-800 equivalent */
+    --text-small-note: #64748b; /* For text-gray-500 equivalent */
+    --link-color: #3b82f6; /* For general links */
+    --link-hover-color: #2563eb; /* For general links hover */
+
+    --header-bg: #0d47a1; /* Original dark blue for header */
+    --nav-link-text: #ffffff; /* Original white for nav links */
+    --nav-link-hover-bg: #1976d2; /* Original lighter blue on hover */
+    --hero-overlay-start: rgba(25, 118, 210, 0.7); /* Lighter blue for hero overlay */
+    --hero-overlay-end: rgba(25, 118, 210, 0.7); /* Lighter blue for hero overlay */
+    --hero-button-bg: #ffffff; /* Original white for hero button */
+    --hero-button-color: #0d47a1; /* Original blue-800 for hero button text */
+    --hero-button-hover-bg: #e2e8f0; /* Light gray on hover */
+    --hero-button-shadow: rgba(0,0,0,0.2); /* Soft shadow */
+    --hero-button-hover-shadow: rgba(0,0,0,0.3); /* Slightly stronger shadow */
+
+    --card-bg: #ffffff; /* Original white for cards */
+    --card-shadow: rgba(0, 0, 0, 0.1); /* Original card shadow */
+    --card-hover-shadow: rgba(0, 0, 0, 0.15); /* Slightly stronger hover shadow */
+    --section-heading: #0d47a1; /* Original blue-800 for section headings */
+    --footer-bg: #263238; /* Original darker gray for footer */
+    --footer-text: #ffffff; /* Original white for footer text */
+
+    /* Logo colors, adjusted for original header background */
+    --logo-main-fill: #ffffff; /* White for main logo shape in header */
+    --logo-accent-fill: #38bdf8; /* Brighter blue for logo accent */
+    --logo-text-main: #ffffff; /* White for logo text */
+    --logo-text-sub: #ffffff; /* White for logo sub-text */
+
+    /* Modal specific */
+    --modal-bg: #ffffff;
+    --modal-text: #2d3748;
+    --modal-close-button-text: #6b7280;
+    --modal-close-button-hover-text: #1f2937;
+    --modal-title-color: #1d4ed8;
+    --modal-body-color: #4a5568;
+
+    /* Program List specific (for academics page) */
+    --program-list-bg: #e3f2fd;
+    --program-list-border: #1976d2;
+
+    /* Testimonial specific (for careers page) */
+    --testimonial-bg: #e3f2fd;
+    --testimonial-border: #1976d2;
+
+    /* Icon color for feature items (facilities page) */
+    --icon-color: #38bdf8;
+
+    /* Form specific (admissions page) */
+    --form-border: #cbd5e0;
+    --form-focus-border: #38bdf8;
+    --form-focus-shadow: rgba(56, 189, 248, 0.3);
+    --submit-button-bg: #38bdf8;
+    --submit-button-hover-bg: #0ea5e9;
+    --submit-button-shadow: rgba(56, 189, 248, 0.4);
+    --submit-button-hover-shadow: rgba(56, 189, 248, 0.6);
+}
+
+/* Dark Mode Variables - Adapted to Original Design's feel with high contrast */
+body[data-theme="dark"] {
+    --bg-primary: #121212; /* Very dark background for high contrast */
+    --text-primary: #e0e0e0; /* Light gray for general body text */
+    --text-content-light: #bdbdbd; /* Brighter light gray for content */
+    --text-content-medium: #f0f0f0; /* Even brighter gray for main content readability */
+    --text-heading-light: #81c784; /* Softer green for headings */
+    --text-heading-dark: #4caf50; /* Stronger green for headings */
+    --text-small-note: #a0a0a0; /* Distinct gray for small notes */
+    --link-color: #81c784; /* Green for links */
+    --link-hover-color: #4caf50; /* Darker green for links hover */
+
+    --header-bg: #1f1f1f; /* Darker header */
+    --nav-link-text: #e0e0e0; /* Lighter nav links */
+    --nav-link-hover-bg: #333333; /* Darker hover */
+    --hero-overlay-start: rgba(31, 31, 31, 0.7);
+    --hero-overlay-end: rgba(31, 31, 31, 0.7);
+    --hero-button-bg: #4caf50; /* Green for hero button */
+    --hero-button-color: #121212; /* Dark text on light button */
+    --hero-button-hover-bg: #388e3c; /* Darker green on hover */
+    --hero-button-shadow: rgba(76, 175, 80, 0.4);
+    --hero-button-hover-shadow: rgba(76, 175, 80, 0.6);
+
+    --card-bg: #282828; /* Dark cards */
+    --card-shadow: rgba(0, 0, 0, 0.3);
+    --card-hover-shadow: rgba(0, 0, 0, 0.5);
+    --section-heading: #4caf50; /* Green for section headings */
+    --footer-bg: #000000; /* Even darker footer */
+    --footer-text: #a0a0a0; /* Lighter footer text */
+
+    /* Logo colors for dark mode */
+    --logo-main-fill: #e0e0e0; /* Lighter gray for main logo shape */
+    --logo-accent-fill: #81c784; /* Brighter green for logo accent */
+    --logo-text-main: #e0e0e0; /* Lighter gray for logo text */
+    --logo-text-sub: #e0e0e0; /* Lighter gray for logo sub-text */
+
+    /* Modal specific */
+    --modal-bg: #282828;
+    --modal-text: #e0e0e0;
+    --modal-close-button-text: #a0a0a0;
+    --modal-close-button-hover-text: #ffffff;
+    --modal-title-color: #81c784;
+    --modal-body-color: #bdbdbd;
+
+    /* Program List specific (for academics page) */
+    --program-list-bg: #333333;
+    --program-list-border: #4caf50;
+
+    /* Testimonial specific (for careers page) */
+    --testimonial-bg: #333333;
+    --testimonial-border: #4caf50;
+
+    /* Icon color for feature items (facilities page) */
+    --icon-color: #81c784;
+
+    /* Form specific (admissions page) */
+    --form-border: #4a4a4a;
+    --form-focus-border: #4caf50;
+    --form-focus-shadow: rgba(76, 175, 80, 0.3);
+    --submit-button-bg: #4caf50;
+    --submit-button-hover-bg: #388e3c;
+    --submit-button-shadow: rgba(76, 175, 80, 0.4);
+    --submit-button-hover-shadow: rgba(76, 175, 80, 0.6);
+}
+
+/* General element styling using variables */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+/* Override specific Tailwind text colors to use variables */
+.text-gray-600 { color: var(--text-content-light); }
+.text-gray-700 { color: var(--text-content-medium); }
+.text-gray-800 { color: var(--text-form-label); }
+.text-blue-700 { color: var(--text-heading-light); }
+.text-blue-800 { color: var(--text-heading-dark); }
+.text-blue-900 { color: var(--text-heading-dark); }
+.text-gray-500 { color: var(--text-small-note); }
+.text-blue-600 { color: var(--link-color); }
+.text-blue-600:hover { color: var(--link-hover-color); }
+
+
+/* Modal specific styles */
+#modal-overlay {
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+#modal-overlay.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#modal-content {
+    background-color: var(--modal-bg);
+    color: var(--modal-text);
+    border-radius: 1rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    margin: 1rem;
+    max-width: 600px;
+    width: 90%;
+    transform: scale(0.95);
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    position: relative;
+}
+#modal-overlay.visible #modal-content {
+    transform: scale(1);
+}
+
+#modal-close-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    line-height: 1;
+    color: var(--modal-close-button-text);
+    transition: color 0.3s ease;
+}
+#modal-close-button:hover {
+    color: var(--modal-close-button-hover-text);
+}
+#modal-title {
+    color: var(--modal-title-color);
+    font-size: 2.25rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+}
+#modal-body {
+    color: var(--modal-body-color);
+    font-size: 1.125rem;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
+#modal-body ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+#modal-body li {
+    margin-bottom: 0.5rem;
+}
+
+
+/* Re-applied original styles with variables */
+.container {
+    max-width: 1200px;
+}
+.header-bg {
+    background-color: var(--header-bg);
+}
+.nav-link {
+    color: var(--nav-link-text);
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+}
+.nav-link:hover {
+    background-color: var(--nav-link-hover-bg);
+}
+.hero-section {
+    background-image: linear-gradient(var(--hero-overlay-start), var(--hero-overlay-end)), url('https://placehold.co/1200x400/1976d2/ffffff?text=AMA+University+Campus');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 4rem 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    transition: background-image 0.3s ease;
+}
+.hero-section h1 {
+    font-size: 3rem;
+}
+.hero-section p {
+    font-size: 1.125rem;
+}
+.hero-button {
+    background-color: var(--hero-button-bg);
+    color: var(--hero-button-color);
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease, color 0.3s ease;
+    box-shadow: 0 4px 15px var(--hero-button-shadow);
+}
+.hero-button:hover {
+    background-color: var(--hero-button-hover-bg);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px var(--hero-button-hover-shadow);
+}
+.card {
+    background-color: var(--card-bg);
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px var(--card-shadow);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px var(--card-hover-shadow);
+}
+.section-heading {
+    color: var(--section-heading);
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+.footer-bg {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+/* Mobile navigation styles */
+.mobile-menu-button {
+    display: none;
+}
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--header-bg);
+        position: absolute;
+        top: 64px;
+        left: 0;
+        z-index: 10;
+        padding-bottom: 1rem;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-link {
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .mobile-menu-button {
+        display: block;
+    }
+    .hero-section {
+        padding: 4rem 0;
+    }
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    .hero-section p {
+        font-size: 1rem;
+    }
+}
+/* Logo specific styles */
+.header-logo-svg {
+    width: 100px;
+    height: 50px;
+    margin-right: 0.5rem;
+}
+.header-logo-svg .shape-main {
+    fill: var(--logo-main-fill);
+    transition: fill 0.3s ease;
+}
+.header-logo-svg .shape-accent {
+    fill: var(--logo-accent-fill);
+    transition: fill 0.3s ease;
+}
+.header-logo-text-main {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--logo-text-main);
+    line-height: 1;
+    letter-spacing: -0.05em;
+    transition: color 0.3s ease;
+}
+.header-logo-text-sub {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--logo-text-sub);
+    letter-spacing: 0.025em;
+    transition: color 0.3s ease;
+}
+
+/* Theme Toggle Button */
+.theme-toggle-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+.theme-toggle-button:hover {
+    background-color: var(--nav-link-hover-bg);
+}
+.theme-toggle-button svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--nav-link-text); /* Use nav link text color for icon */
+    transition: fill 0.3s ease;
+}
+@media (max-width: 768px) {
+    .theme-toggle-button {
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+}
+
+/* Form input and textarea styles */
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 0.75rem 1rem; /* Increased padding for better feel */
+    border: 1px solid var(--form-border);
+    border-radius: 0.5rem; /* Slightly more rounded corners */
+    background-color: var(--card-bg); /* Use card background for consistency */
+    color: var(--text-primary); /* Use primary text color */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    font-size: 1rem; /* Ensure readable font size */
+}
+
+.form-input:focus, .form-textarea:focus {
+    outline: none;
+    border-color: var(--form-focus-border);
+    box-shadow: 0 0 0 3px var(--form-focus-shadow); /* Add a subtle glow on focus */
+}
+
+.form-textarea {
+    min-height: 120px; /* Set a minimum height for the textarea */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+/* Submit button styles */
+.submit-button {
+    background-color: var(--submit-button-bg);
+    color: white;
+    font-weight: 700; /* Bolder text */
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem; /* More rounded button */
+    box-shadow: 0 4px 10px var(--submit-button-shadow);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    border: none; /* Remove default button border */
+}
+
+.submit-button:hover {
+    background-color: var(--submit-button-hover-bg);
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 6px 15px var(--submit-button-hover-shadow);
+}

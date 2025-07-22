@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMA University - Why Choose Us?</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Header -->
+    <header class="header-bg shadow-lg">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <!-- Custom Logo Design (SVG) for header -->
+                <svg class="header-logo-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <path class="shape-main" d="M100 10 L190 60 V140 L100 190 L10 140 V60 Z"/>
+                    <path class="shape-accent" d="M100 30 L150 70 L100 150 L50 70 Z" opacity="0.8"/>
+                    <path class="shape-accent" d="M100 30 L150 70 L100 150 L50 70 Z" transform="translate(0, -10)" opacity="0.6"/>
+                    <path class="shape-accent" d="M100 30 L150 70 L100 150 L50 70 Z" transform="translate(0, -20)" opacity="0.4"/>
+                    <circle class="shape-accent" cx="100" cy="65" r="10"/>
+                </svg>
+                <div>
+                    <div class="header-logo-text-main">AMA</div>
+                    <div class="header-logo-text-sub">UNIVERSITY & COLLEGES</div>
+                </div>
+            </a>
+            <button class="mobile-menu-button text-white focus:outline-none" aria-label="Toggle navigation">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+            <div class="nav-links md:flex space-x-4 items-center">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="academics.html" class="nav-link">Academic Excellence</a>
+                <a href="facilities.html" class="nav-link">Facilities & Environment</a>
+                <a href="careers.html" class="nav-link">Career Opportunities</a>
+                <a href="admissions.html" class="nav-link">Admissions & Contact</a>
+                <a href="https://discipulusv2.amasystem.net/" target="_blank" class="nav-link">Official Site</a>
+                <button id="theme-toggle" class="theme-toggle-button" aria-label="Toggle light and dark mode">
+                    <!-- Sun icon for light mode, Moon icon for dark mode -->
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                        <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.106a.75.75 0 00-1.061-1.061l-1.591 1.591a.75.75 0 101.061 1.061l1.591-1.591zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5h2.25a.75.75 0 01.75.75zM18.894 17.894a.75.75 0 001.061 1.061l1.591-1.591a.75.75 0 00-1.061-1.061l-1.591 1.591zM12 18.75a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0v-2.25a.75.75 0 01.75-.75zM5.106 18.894a.75.75 0 001.061 1.061l1.591-1.591a.75.75 0 00-1.061-1.061l-1.591 1.591zM3 12a.75.75 0 01.75-.75h2.25a.75.75 0 010 1.5H3.75A.75.75 0 013 12zM5.106 6.106a.75.75 0 00-1.061 1.061l1.591 1.591a.75.75 0 001.061-1.061l-1.591-1.591z"/>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                        <path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 01.145.832l-1.594 4.14c-.823 2.135-.145 4.413 1.594 5.518A7.5 7.5 0 0021.75 12c0-.855-.104-1.68-.3-2.478a.75.75 0 01.612-.864 6.003 6.003 0 00-9.35-7.5H9.528z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Your Future Starts Here</h1>
+            <p class="text-lg md:text-xl mb-8">Discover why AMA University is the ideal choice for your higher education.</p>
+            <a href="admissions.html" class="hero-button">Apply Now</a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <section class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-blue-800 mb-4 section-heading">Why Choose AMA University?</h2>
+            <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+                AMA University stands as a beacon of innovation and academic excellence in the Philippines. With a rich history of pioneering IT education, we are committed to nurturing future leaders and professionals. Our holistic approach ensures that students not only gain theoretical knowledge but also practical skills essential for success in a rapidly evolving global landscape.
+            </p>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div class="card text-center">
+                <h3 class="text-xl font-semibold text-blue-700 mb-3">Pioneering Education</h3>
+                <p class="text-gray-600">
+                    Be part of a legacy that introduced computer education to the Philippines. We continuously innovate our curriculum to stay ahead, offering future-ready programs.
+                </p>
+            </div>
+            <div class="card text-center">
+                <h3 class="text-xl font-semibold text-blue-700 mb-3">Industry-Relevant Programs</h3>
+                <p class="text-gray-600">
+                    Our courses are meticulously designed with current industry demands in mind, ensuring graduates are highly employable and well-prepared for the global workforce.
+                </p>
+            </div>
+            <div class="card text-center">
+                <h3 class="text-xl font-semibold text-blue-700 mb-3">Global Opportunities</h3>
+                <p class="text-gray-600">
+                    With extensive international partnerships and a diverse student body, AMA opens doors to global career paths and cross-cultural learning experiences.
+                </p>
+            </div>
+        </section>
+
+        <section class="text-center">
+            <h2 class="text-3xl font-bold text-blue-800 mb-4 section-heading">What Sets Us Apart?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card flex items-start p-6">
+                    <svg class="w-8 h-8 text-blue-600 mr-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-700 mb-2">Expert Faculty & Mentorship</h3>
+                        <p class="text-gray-600">Learn from a distinguished faculty composed of academic scholars and industry experts who provide personalized guidance and mentorship, shaping future leaders.</p>
+                    </div>
+                </div>
+                <div class="card flex items-start p-6">
+                    <svg class="w-8 h-8 text-blue-600 mr-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 6a3 3 0 013-3h10a2 2 0 012 2v8a2 2 0 01-2 2H6.5L3 18V6zm4.5-1.5a.5.5 0 000 1h5a.5.5 0 000-1h-5zM7 9a.5.5 0 000 1h5a.5.5 0 000-1H7zm-2 2.5a.5.5 0 01.5-.5h5a.5.5 0 010 1h-5a.5.5 0 01-.5-.5z" clip-rule="evenodd"></path></svg>
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-700 mb-2">Cutting-Edge Facilities</h3>
+                        <p class="text-gray-600">Study in a modern learning environment with state-of-the-art laboratories, comprehensive digital and physical libraries, and advanced technological resources to support your studies.</p>
+                    </div>
+                </div>
+                <div class="card flex items-start p-6">
+                    <svg class="w-8 h-8 text-blue-600 mr-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-700 mb-2">Strong Industry Connections</h3>
+                        <p class="text-gray-600">Benefit from our extensive network of industry partners, providing valuable internship opportunities, career fairs, and a clear pathway to successful careers upon graduation.</p>
+                    </div>
+                </div>
+                <div class="card flex items-start p-6">
+                    <svg class="w-8 h-8 text-blue-600 mr-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2a1 1 0 100-2h-2z" fill-rule="evenodd" clip-rule="evenodd"></path><path d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zm10 0a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 14a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zm10 0a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-700 mb-2">Vibrant Global Community</h3>
+                        <p class="text-gray-600">Join a diverse and inclusive community that prepares you for global citizenship, fostering cross-cultural understanding and providing opportunities for international exposure.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-bg py-8 mt-auto">
+        <div class="container mx-auto px-4 text-center text-sm">
+            <p>&copy; 2025 AMA University. All rights reserved.</p>
+            <p class="mt-2 text-gray-400">AMA University is committed to providing quality and relevant education.</p>
+        </div>
+    </footer>
+
+    <!-- Modal Structure -->
+    <div id="modal-overlay" class="fixed inset-0 flex items-center justify-center z-50 hidden transition-opacity duration-300 opacity-0">
+        <div id="modal-content" class="rounded-xl shadow-2xl p-8 m-4 max-w-lg w-full transform scale-95 transition-transform duration-300">
+            <button id="modal-close-button" class="absolute top-4 right-4 text-2xl font-bold">&times;</button>
+            <h3 id="modal-title" class="text-3xl font-extrabold mb-4"></h3>
+            <div id="modal-body" class="leading-relaxed"></div>
+        </div>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

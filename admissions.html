@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMA University - Admissions & Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="flex flex-col min-h-screen">
+    <header class="header-bg shadow-xl">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <svg class="header-logo-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <path class="shape-main" d="M100 10 L190 60 V140 L100 190 L10 140 V60 Z"/>
+                    <path class="shape-accent" d="M100 30 L150 70 L100 150 L50 70 Z" opacity="0.8"/>
+                    <path class="shape-accent" d="M100 30 L150 70 L100 150 L50 70 Z" transform="translate(0, -10)" opacity="0.6"/>
+                    <path class="shape-accent" d="M100 30 L150 70 L100 150 L50 70 Z" transform="translate(0, -20)" opacity="0.4"/>
+                    <circle class="shape-accent" cx="100" cy="65" r="10"/>
+                </svg>
+                <div>
+                    <div class="header-logo-text-main">AMA</div>
+                    <div class="header-logo-text-sub">UNIVERSITY & COLLEGES</div>
+                </div>
+            </a>
+            <button class="mobile-menu-button text-white focus:outline-none" aria-label="Toggle navigation">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+            <div class="nav-links md:flex space-x-6 items-center">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="academics.html" class="nav-link">Academic Excellence</a>
+                <a href="facilities.html" class="nav-link">Facilities & Environment</a>
+                <a href="careers.html" class="nav-link">Career Opportunities</a>
+                <a href="admissions.html" class="nav-link">Admissions & Contact</a>
+                <a href="https://discipulusv2.amasystem.net/" target="_blank" class="nav-link">Official Site</a>
+                <button id="theme-toggle" class="theme-toggle-button" aria-label="Toggle light and dark mode">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                        <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.106a.75.75 0 00-1.061-1.061l-1.591 1.591a.75.75 0 101.061 1.061l1.591-1.591zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5h2.25a.75.75 0 01.75.75zM18.894 17.894a.75.75 0 001.061 1.061l1.591-1.591a.75.75 0 00-1.061-1.061l-1.591 1.591zM12 18.75a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0v-2.25a.75.75 0 01.75-.75zM5.106 18.894a.75.75 0 001.061 1.061l1.591-1.591a.75.75 0 00-1.061-1.061l-1.591 1.591zM3 12a.75.75 0 01.75-.75h2.25a.75.75 0 010 1.5H3.75A.75.75 0 013 12zM5.106 6.106a.75.75 0 00-1.061 1.061l1.591 1.591a.75.75 0 001.061-1.061l-1.591-1.591z"/>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                        <path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 01.145.832l-1.594 4.14c-.823 2.135-.145 4.413 1.594 5.518A7.5 7.5 0 0021.75 12c0-.855-.104-1.68-.3-2.478a.75.75 0 01.612-.864 6.003 6.003 0 00-9.35-7.5H9.528z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow container mx-auto px-6 py-12">
+        <section class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-extrabold section-heading mb-6">Admissions & Contact Us</h1>
+            <p class="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
+                Ready to embark on your academic journey with AMA University? Find out how to apply, understand our admission process, and easily get in touch with our dedicated team.
+            </p>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-3xl md:text-4xl font-extrabold section-heading mb-8 text-center">How to Apply</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="card">
+                    <h3 class="text-2xl font-bold text-blue-700 mb-4">Admission Requirements</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-3 leading-relaxed">
+                        <li>Original High School Report Card (Form 138)</li>
+                        <li>Certificate of Good Moral Character</li>
+                        <li>Original Birth Certificate (PSA copy)</li>
+                        <li>Two (2) pieces of 2x2 ID Pictures</li>
+                        <li>Photocopy of any valid ID (for guardian/parent)</li>
+                        <li>For transferees: Official Transcript of Records and Honorable Dismissal</li>
+                    </ul>
+                    <p class="mt-6 text-sm text-gray-500">
+                        *Please note that specific requirements may vary per program and level of study. We highly recommend contacting the admissions office for the most accurate and up-to-date details.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 class="text-2xl font-bold text-blue-700 mb-4">Admission Process</h3>
+                    <ol class="list-decimal list-inside text-gray-700 space-y-3 leading-relaxed">
+                        <li>Submit all complete admission requirements to the AMA University Admissions Office.</li>
+                        <li>Take the required entrance examination (if applicable for your chosen program).</li>
+                        <li>Attend a scheduled interview with the Dean or relevant Department Head.</li>
+                        <li>Upon successful evaluation, you will receive your Official Notice of Acceptance.</li>
+                        <li>Proceed to the final enrollment process to secure your slot.</li>
+                    </ol>
+                    <p class="mt-6 text-sm text-gray-500">
+                        For online application procedures or any specific inquiries, please utilize the contact form below or reach out to us directly via phone.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-3xl md:text-4xl font-extrabold section-heading mb-8 text-center">Contact Information</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="card">
+                    <h3 class="text-2xl font-bold text-blue-700 mb-4">Main Campus</h3>
+                    <p class="text-gray-700 mb-3">
+                        <strong>Address:</strong> Maximina St., Villa Arca Subdivision, Project 8, Quezon City
+                    </p>
+                    <p class="text-gray-700 mb-3">
+                        <strong>Phone:</strong> <a href="tel:+639283356732" class="text-blue-600 hover:underline">0928 335 6732</a> / <a href="tel:+639158419289" class="text-blue-600 hover:underline">0915 841 9289</a>
+                    </p>
+                    <p class="text-gray-700 mb-3">
+                        <strong>Email:</strong> <a href="mailto:ama_university@amaes.edu.ph" class="text-blue-600 hover:underline">ama_university@amaes.edu.ph</a>
+                    </p>
+                    <p class="text-gray-700">
+                        <strong>Office Hours:</strong> Monday - Friday, 8:00 AM - 5:00 PM (Philippine Standard Time)
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 class="text-2xl font-bold text-blue-700 mb-4">Branch Campuses & Online Presence</h3>
+                    <p class="text-gray-700 mb-3">
+                        AMA University operates numerous branch campuses strategically located nationwide. For a comprehensive list of all branches and their specific contact details, please visit our official website.
+                    </p>
+                    <p class="text-gray-700 mb-3">
+                        <strong>Official Website:</strong> <a href="https://discipulusv2.amasystem.net/" target="_blank" class="text-blue-600 hover:underline font-semibold">discipulusv2.amasystem.net</a>
+                    </p>
+                    <p class="text-gray-700">
+                        <strong>Connect with Us:</strong>
+                        <a href="https://www.facebook.com/AMAUniversityOfficial/" target="_blank" class="text-blue-600 hover:underline mr-4">Facebook</a>
+                        <a href="https://twitter.com/AMAUnivOfficial" target="_blank" class="text-blue-600 hover:underline">Twitter</a>
+                        </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-3xl md:text-4xl font-extrabold section-heading mb-8 text-center">Send Us a Message</h2>
+            <div class="card max-w-2xl mx-auto p-8 border border-blue-200 bg-gradient-to-br from-blue-50 to-white dark:from-gray-800 dark:to-gray-900 shadow-lg transform hover:scale-105 transition-all duration-300 ease-in-out">
+                <form id="contactForm" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-gray-800 dark:text-gray-200 text-lg font-semibold mb-2">Your Name:</label>
+                        <input type="text" id="name" name="name" class="form-input transition-all duration-200 ease-in-out focus:ring-blue-400 focus:border-blue-400" placeholder="Enter your full name" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-800 dark:text-gray-200 text-lg font-semibold mb-2">Your Email:</label>
+                        <input type="email" id="email" name="email" class="form-input transition-all duration-200 ease-in-out focus:ring-blue-400 focus:border-blue-400" placeholder="Enter your email address" required>
+                    </div>
+                    <div>
+                        <label for="subject" class="block text-gray-800 dark:text-gray-200 text-lg font-semibold mb-2">Subject:</label>
+                        <input type="text" id="subject" name="subject" class="form-input transition-all duration-200 ease-in-out focus:ring-blue-400 focus:border-blue-400" placeholder="Subject of your inquiry" required>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-800 dark:text-gray-200 text-lg font-semibold mb-2">Message:</label>
+                        <textarea id="message" name="message" class="form-textarea transition-all duration-200 ease-in-out focus:ring-blue-400 focus:border-blue-400" placeholder="Type your detailed message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button w-full bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white font-bold py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 ease-in-out">Send Message</button>
+                    <div id="formMessage" class="mt-6 text-center text-base font-semibold"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-bg py-10 mt-auto">
+        <div class="container mx-auto px-6 text-center text-sm">
+            <p>&copy; 2025 AMA University. All rights reserved.</p>
+            <p class="mt-3 text-gray-400">Committed to providing quality and relevant education for a global future.</p>
+        </div>
+    </footer>
+
+    <div id="modal-overlay" class="fixed inset-0 flex items-center justify-center z-50 hidden transition-opacity duration-300 opacity-0">
+        <div id="modal-content" class="rounded-xl shadow-2xl p-8 m-4 max-w-lg w-full transform scale-95 transition-transform duration-300">
+            <button id="modal-close-button" class="absolute top-4 right-4 text-2xl font-bold">&times;</button>
+            <h3 id="modal-title" class="text-3xl font-extrabold mb-4"></h3>
+            <div id="modal-body" class="leading-relaxed"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
